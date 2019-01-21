@@ -12,27 +12,26 @@ angular
   .module('routingQuizApp', ['ui.router']);
   .config(['$stateProvder', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
-    $stateProvider;
-    .state('home', {
+    $stateProvider.state('home', {
       url: '/',
       templateUrl: 'views/instructions.html'
     });
-    .state('redBrick', {
+    $stateProvider.state('redBrick', {
       url: '/bricks/red',
       templateUrl: 'views/bricks.html',
       controller: 'RedBricksCtrl as brick'
     });
-    .state('blueBrick', {
+    $stateProvider.state('blueBrick', {
       url: '/bricks/blue',
       templateUrl: 'views/bricks.html',
       controller: 'BlueBricksCtrl as brick'
     });
-    .state('greenBrick', {
+    $stateProvider.state('greenBrick', {
       url: '/bricks/green',
       templateUrl: 'views/bricks.html',
       controller: 'GreenBricksCtrl as brick'
     });
-    .state('cart', {
+    $stateProvider.state('cart', {
       url: '/cart',
       templateUrl: 'views/cart.html',
       controller: 'CartCtrl as cart'
