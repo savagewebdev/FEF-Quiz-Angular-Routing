@@ -54,7 +54,10 @@
     <div ng-include="'views/bricks.html'" ng-controller="BlueBricksCtrl as brick"></div>
     <div ng-include="'views/bricks.html'" ng-controller="GreenBricksCtrl as brick"></div>
     <div ng-include="'views/cart.html'" ng-controller="CartCtrl as cart"></div>
+    <div ui-view></div>
   </div>
+  
+  
 
   <div class="footer">
     <div class="container">
@@ -67,6 +70,7 @@
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
