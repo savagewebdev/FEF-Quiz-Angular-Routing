@@ -41,6 +41,10 @@
 
           <ul class="nav navbar-nav">
             <li class="active"><a href="#/">Home</a></li>
+            <li> <a ui-sref="redBrick">Red Bricks</a></li>
+            <li> <a ui-sref="blueBrick">Blue Bricks</a></li>
+            <li> <a ui-sref="greenBrick">Green Bricks</a></li>
+            <li> <a ui-sref="cart">Cart</a></li>
           </ul>
         </div>
       </div>
@@ -54,7 +58,6 @@
     <div ng-include="'views/bricks.html'" ng-controller="BlueBricksCtrl as brick"></div>
     <div ng-include="'views/bricks.html'" ng-controller="GreenBricksCtrl as brick"></div>
     <div ng-include="'views/cart.html'" ng-controller="CartCtrl as cart"></div>
-    <div ui-view></div>
   </div>
   
   
